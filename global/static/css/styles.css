@@ -1,0 +1,82 @@
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Corpo da página */
+body {
+    font-family: 'Arial', sans-serif;
+    background-color: #f4f4f4;
+    color: #333;
+    line-height: 1.6;
+}
+
+/* Cabeçalho */
+header {
+    background-color: #ffcb05; /* Cor amarela do Pokémon */
+    padding: 20px 0;
+    text-align: center;
+}
+
+header h1 {
+    font-size: 3rem;
+    color: #3d7dca; /* Azul escuro */
+    font-weight: bold;
+}
+
+/* Contêiner de pokémons */
+.pokemon-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    padding: 20px;
+    gap: 20px;
+}
+
+/* Cartões de Pokémon */
+.pokemon-card {
+    background-color: #fff;
+    border: 2px solid #ddd;
+    border-radius: 10px;
+    width: 220px;
+    text-align: center;
+    padding: 15px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    transition: transform 0.2s ease;
+}
+
+.pokemon-card:hover {
+    transform: translateY(-5px);
+}
+
+/* Imagem do Pokémon */
+.pokemon-image {
+    width: 100%;
+    height: auto;
+    border-radius: 10px;
+}
+
+/* Nome e tipo do Pokémon */
+.pokemon-card h2 {
+    font-size: 1.5rem;
+    margin: 10px 0;
+    color: #3d7dca;
+}
+
+.pokemon-card p {
+    font-size: 1rem;
+    color: #666;
+}
+
+/* Rodapé */
+footer {
+    text-align: center;
+    background-color: #333;
+    color: #fff;
+    padding: 10px;
+    position: fixed;
+    width: 100%;
+    bottom: 0;
+}

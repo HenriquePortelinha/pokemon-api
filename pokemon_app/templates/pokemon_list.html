@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    {% load static %}
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pokémon List</title>
+    <link rel="stylesheet" href="{% static 'styles.css' %}">
+</head>
+<body>
+    <header>
+        <h1>Pokémon List</h1>
+    </header>
+
+    <main>
+        <section class="pokemon-container">
+            {% for pokemon in pokemons %}
+                <div class="pokemon-card">
+                    <img src="{{ pokemon.image_url }}" alt="{{ pokemon.name }}" class="pokemon-image">
+                    <h2>{{ pokemon.name }}</h2>
+                    <p><strong>Type:</strong> {{ pokemon.type }}</p>
+                </div>
+            {% endfor %}
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2024 Pokémon Project</p>
+    </footer>
+</body>
+</html>
